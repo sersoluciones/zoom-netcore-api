@@ -88,5 +88,14 @@ namespace AndcultureCode.ZoomClient.Models.Meetings
         /// Zoom Property: alternative_hosts
         /// </summary>
         public string AlternativeHosts { get; set; }
+
+        /// <summary>
+        /// Zoom Property: waiting_room
+        /// </summary>
+        [JsonProperty("waiting_room")]
+        public bool WaitingRoom { get; set; }
+
+        [JsonProperty("registrants_email_notification")]
+        public bool RegistrantsEmailNotification { get; set; }
     }
 }
